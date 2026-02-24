@@ -60,7 +60,7 @@ class Alien_Invasion:
     def _check_events(self):
         """Respond to keyboard and mouse events."""
         for event in pygame.event.get():
-            if event == pygame.QUIT:
+            if event.type == pygame.QUIT:
                 sys.exit()
 
             elif event.type == pygame.KEYDOWN:  #in pygame each key press is registered as KEYDOWN event.
